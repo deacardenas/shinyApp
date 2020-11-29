@@ -1,6 +1,7 @@
 library(shiny)
 library(caret)
 library(ggplot2)
+library(randomForest)
 
 shinyServer(function(input, output) {
     titanic <- read.csv("https://query.data.world/s/7dva5ttbu2ck5syuh3mllhsl5ud2w2", header=TRUE, stringsAsFactors=TRUE, na.strings = c(""));
